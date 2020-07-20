@@ -1,0 +1,26 @@
+@model PooLojaVirtual.Web.ViewModels.CheckoutViewModel
+
+@{
+    ViewData["Title"] = "Pagamento";
+}
+
+@if (Model.NumItens == 0)
+{
+  <p class="text-center">Seu Carrinho está vazio</p>
+  <p class="text-center"><a asp-controller="Home" asp-action="Index">Continuar comprando</a></p>
+}
+else
+{
+    <h4 class="text-center">Resumo do pedido</h4>
+    <p>@Model.NumItens item(s)</p>
+    <p class>Valor total: <strong>$@Model.Total</strong></p>
+    <form asp-action="Confirmar">
+      <div class="form-group">
+        <label>Forma de Pagamento:</label>
+        <select asp-for="@Model.IdFormaPagamento" asp-items="@Model.FormasPagamento"></select>
+    </div>
+      
+      <hr>
+      <button class="btn btn-primary" type="submit">Confirmar</button>
+    </form>
+}

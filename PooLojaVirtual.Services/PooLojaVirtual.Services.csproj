@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\PooLojaVirtual.Core\PooLojaVirtual.Core.csproj" />
+    <ProjectReference Include="..\PooLojaVirtual.Infraestructure\PooLojaVirtual.Infraestructure.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>

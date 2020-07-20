@@ -1,0 +1,23 @@
+﻿@model IEnumerable<PooLojaVirtual.Models.Produto>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row">
+        @foreach (var produto in Model)
+        {
+            <div class="col-md-3">
+                <div class="card p-2">
+                    <img class="card-img-top" src="img/@produto.Foto">
+                    <div class="card-body">
+                        <h5 class="card-title">@produto.Nome</h5>
+                        <h4 class="lead">$@produto.Preco</h4>
+                        <a asp-controller="Carrinho" asp-action="Adicionar" asp-route-id="@produto.Id" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

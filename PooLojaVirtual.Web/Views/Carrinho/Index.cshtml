@@ -1,0 +1,58 @@
+@model Carrinho
+
+@{
+    ViewData["Title"] = "Carrinho";
+}
+
+<h4 class="text-center">Seu carrinho</h4>
+
+@if (Model.Itens.Count() == 0)
+{
+  <p class="text-center">Seu Carrinho está vazio</p>
+  <p class="text-center"><a asp-controller="Home" asp-action="Index">Continuar comprando</a></p>
+}
+else
+{
+  <div class="container">
+    <table id="cart" class="table table-hover table-condensed">
+      <thead>
+        <tr>
+          <th style="width:50%">Produto</th>
+          <th style="width:10%">Preço</th>
+          <th style="width:8%">Quantidade</th>
+          <th style="width:22%" class="text-center">Subtotal</th>
+          <th style="width:10%"></th>
+        </tr>
+      </thead>
+      <tbody>
+          @foreach (var item in Model.Itens)
+          {
+              <tr>
+                  <td data-th="Produto">
+                      <div class="row">
+                          <div class="col-sm-2 hidden-xs"><img src="img/@item.Produto.Foto" alt="..." class="img-thumbnail" /></div>
+                          <div class="col-sm-10">
+                          <p class="nomargin">@item.Produto.Nome</p>
+                          </div>
+                      </div>
+                  </td>
+                  <td data-th="Preço">$@item.Produto.Preco</td>
+                  <td data-th="Quantidade" class="text-center">@item.Quantidade</td>
+                  <td data-th="Subtotal" class="text-center">$@item.Subtotal</td>
+                  <td class="actions" data-th="">
+                      <a asp-action="Remover" asp-controller="Carrinho" asp-route-id="@item.Produto.Id" class="btn btn-danger btn-sm">x</a>
+                  </td>
+              </tr>
+          }
+      </tbody>
+      <tfoot>
+        <tr>
+          <td><a class="btn btn-info" asp-controller="Home" asp-action="Index">Continuar comprando</a></td>
+          <td colspan="2" class="hidden-xs"></td>
+          <td class="hidden-xs text-center"><strong>Total $@Model.Total</strong></td>
+          <td><a asp-controller="Checkout" asp-action="Index" class="btn btn-success btn-block">Pagar</a></td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+}
