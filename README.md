@@ -15,7 +15,9 @@ Mais informações em: https://evandroamparo.orbitlearn.online/desafio-dev
 Bons estudos!
 
 ## Ferramentas e links disponibilizados no desafio
+
 Boas práticas
+
 1 - https://12factor.net/pt_br/
 
 Radar de novidades no desenvolvimento
