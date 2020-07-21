@@ -17,5 +17,7 @@ Bons estudos!
 ## Ferramentas e links disponibilizados no desafio
 Boas práticas
 1 - https://12factor.net/pt_br/
+
 Radar de novidades no desenvolvimento
+
 2 - https://www.thoughtworks.com/pt/radar/techniques/pipelines-as-code
