@@ -13,3 +13,9 @@ Depois de completar cada etapa do desafio você terá aprendido sobre versioname
 Mais informações em: https://evandroamparo.orbitlearn.online/desafio-dev
 
 Bons estudos!
+
+## Ferramentas e links disponibilizados no desafio
+Boas práticas
+1 - https://12factor.net/pt_br/
+Radar de novidades no desenvolvimento
+2 - https://www.thoughtworks.com/pt/radar/techniques/pipelines-as-code
