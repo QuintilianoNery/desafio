@@ -23,3 +23,8 @@ Boas práticas
 Radar de novidades no desenvolvimento
 
 2 - https://www.thoughtworks.com/pt/radar/techniques/pipelines-as-code
+
+
+## Comandos
+
+ dotnet watch test - Este comando serve para todas as vezes que se salvar um arquivo de teste ou tiver alguma modificação na pasta de teste, ele executa automaticamente, sem precisar ficar passando o comando *dotnet test/*
