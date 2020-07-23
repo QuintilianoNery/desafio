@@ -13,7 +13,7 @@ namespace PooLojaVirtual.Models
         {
             get
             {
-                return Itens.Sum(item => item.Produto.Preco);
+                return Itens.Sum(item => item.Subtotal);
             }
         }
 
