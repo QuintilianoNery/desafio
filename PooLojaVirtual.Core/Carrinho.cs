@@ -20,7 +20,8 @@ namespace PooLojaVirtual.Models
         public void Adicionar(Produto produto, int quantidade)
         {
             var item  = itens.Find(item => item.Produto.Id == produto.Id);
-            if( item == null){
+            if( item == null)
+            {
                 itens.Add(new ItemCarrinho(produto, quantidade));
             }
             else
