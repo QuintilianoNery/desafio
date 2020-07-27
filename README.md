@@ -24,6 +24,10 @@ Radar de novidades no desenvolvimento
 
 2 - https://www.thoughtworks.com/pt/radar/techniques/pipelines-as-code
 
+AWS
+
+3 - https://academy.estabil.is/courses/devops-foundation
+
 
 ## Comandos
 
