@@ -28,6 +28,10 @@ AWS
 
 3 - https://academy.estabil.is/courses/devops-foundation
 
+Aplicação pronta
+
+4 - https://quintiliano.azurewebsites.net/
+
 
 ## Comandos
 
