@@ -42,3 +42,7 @@ Aplicação pronta
  Juntamente com a aplicação criada no /*Desafio seu software no ar em uma semana*/, aproveitei para implementar o mapa de calor do site utilizando a ferramenta /*inspectlet*/, com ela é possível mapear, monitorar e fazer análises de quais partes em seu site o usuário mais acessa ou quais ferramentas o usuário mais acessa.
  Com a ferramenta inspectlet, também é possível criar testes A/B e ter um ótimo dashboard para análises mais avançadas. Tudo isso é possível, deviodo um trecho de código javascript, criado automaticamente que o desenvolvedor deve incluir entre a tag <head>.
  
+ Link da ferramenta inspectlet
+
+www.inspectlet.com
+ 
