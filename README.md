@@ -37,6 +37,26 @@ Aplicação pronta
 
  /*dotnet watch test*/ - Este comando serve para todas as vezes que se salvar um arquivo de teste ou tiver alguma modificação na pasta de teste, ele executa automaticamente, sem precisar ficar passando o comando /*dotnet test/*
  
+ Adicionar arquivos para serem enviados ao git
+
+git add.
+ 
+ Adicionar a referência ao repositório remoto
+
+git remote add origin [Link do repositório]
+ 
+Pimeiro commit
+
+git commit -m "Mensagem"
+
+Enviar para o master origin
+
+git push origin master -u
+
+[-u informa ao git que todos git push será enviando o master para o origin]
+ 
+ 
+ 
  ## Implementação Extra
  
  Juntamente com a aplicação criada no /*Desafio seu software no ar em uma semana*/, aproveitei para implementar o mapa de calor do site utilizando a ferramenta /*inspectlet*/, com ela é possível mapear, monitorar e fazer análises de quais partes em seu site o usuário mais acessa ou quais ferramentas o usuário mais acessa.
