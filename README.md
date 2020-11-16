@@ -24,11 +24,53 @@ Radar de novidades no desenvolvimento
 
 2 - https://www.thoughtworks.com/pt/radar/techniques/pipelines-as-code
 
+AWS
+
+3 - https://academy.estabil.is/courses/devops-foundation
+
+Aplicação pronta
+
+4 - https://quintiliano.azurewebsites.net/
+
 
 ## Comandos
 
+<<<<<<< HEAD
  dotnet watch test - Este comando serve para todas as vezes que se salvar um arquivo de teste ou tiver alguma modificação na pasta de teste, ele executa automaticamente, sem precisar ficar passando o comando *dotnet test/*
 
 ## Iniciar o projeto 
 Estar na pasta PooLojaVirtual.Web
 executar o comando  'dotnet run'
+=======
+ /*dotnet watch test*/ - Este comando serve para todas as vezes que se salvar um arquivo de teste ou tiver alguma modificação na pasta de teste, ele executa automaticamente, sem precisar ficar passando o comando /*dotnet test/*
+ 
+ Adicionar arquivos para serem enviados ao git
+
+git add.
+ 
+ Adicionar a referência ao repositório remoto
+
+git remote add origin [Link do repositório]
+ 
+Pimeiro commit
+
+git commit -m "Mensagem"
+
+Enviar para o master origin
+
+git push origin master -u
+
+[-u informa ao git que todos git push será enviando o master para o origin]
+ 
+ 
+ 
+ ## Implementação Extra
+ 
+ Juntamente com a aplicação criada no /*Desafio seu software no ar em uma semana*/, aproveitei para implementar o mapa de calor do site utilizando a ferramenta /*inspectlet*/, com ela é possível mapear, monitorar e fazer análises de quais partes em seu site o usuário mais acessa ou quais ferramentas o usuário mais acessa.
+ Com a ferramenta inspectlet, também é possível criar testes A/B e ter um ótimo dashboard para análises mais avançadas. Tudo isso é possível, deviodo um trecho de código javascript, criado automaticamente que o desenvolvedor deve incluir entre a tag <head>.
+ 
+ Link da ferramenta inspectlet
+
+www.inspectlet.com
+ 
+>>>>>>> 17b693f7dcbdd1e27f767f2aaf13269f54aec635
