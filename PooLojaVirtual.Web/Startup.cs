@@ -31,16 +31,9 @@ namespace PooLojaVirtual
 
             var connectionString = _configuration.GetConnectionString("LojaDbContext");
 
-            if (_environment.IsDevelopment())
-            {
-                services.AddDbContext<LojaDbContext, LojaSqLiteDbContext>(options =>
-                    options.UseSqlite(connectionString));
-            }
-            else
-            {
-                services.AddDbContext<LojaDbContext>(options =>
-                    options.UseSqlServer(connectionString));
-            }
+            
+            services.AddDbContext<LojaDbContext, LojaSqLiteDbContext>(options =>
+                options.UseSqlite(connectionString));
 
             services.Configure<CookiePolicyOptions>(options =>
             {
