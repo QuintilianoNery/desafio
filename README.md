@@ -40,6 +40,7 @@ Aplicação pronta
 ## Iniciar o projeto 
 Estar na pasta PooLojaVirtual.Web
 executar o comando  'dotnet run'
+Ou apenas executar o arquivo start.bat
 =======
  /*dotnet watch test*/ - Este comando serve para todas as vezes que se salvar um arquivo de teste ou tiver alguma modificação na pasta de teste, ele executa automaticamente, sem precisar ficar passando o comando /*dotnet test/*
  
