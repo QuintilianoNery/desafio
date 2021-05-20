@@ -35,7 +35,6 @@ Aplicação pronta
 
 ## Comandos
 
-<<<<<<< HEAD
  dotnet watch test - Este comando serve para todas as vezes que se salvar um arquivo de teste ou tiver alguma modificação na pasta de teste, ele executa automaticamente, sem precisar ficar passando o comando *dotnet test/*
 
 ## Iniciar o projeto 
@@ -72,5 +71,3 @@ git push origin master -u
  Link da ferramenta inspectlet
 
 www.inspectlet.com
- 
->>>>>>> 17b693f7dcbdd1e27f767f2aaf13269f54aec635
